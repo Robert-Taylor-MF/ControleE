@@ -21,18 +21,22 @@ public class Principal {
 
         int op = sc.nextInt();
 
-        switch (op){
+        Menus opcao = new Menus(op);
+
+        switch (opcao.getOp()){
             case 1:
                 Menus.menuCadastro();
-                int op2 = sc.nextInt();
+                opcao.setOp(sc.nextInt());
 
-                switch (op2){
+                switch (opcao.getOp()){
                     case 1:
                     case 2:
                     case 3:
                     case 4:
                     case 0:
                         Menus.menuPrincipal();
+                        opcao.setOp(sc.nextInt());
+                        break;
                 }
                 break;
             case 2:

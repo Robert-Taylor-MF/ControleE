@@ -3,6 +3,22 @@ package menus;
 
 public class Menus {
 
+        private int op;
+
+        public Menus(){}
+
+        public Menus(int op) {
+                this.op = op;
+        }
+
+        public int getOp() {
+                return op;
+        }
+
+        public void setOp(int op) {
+                this.op = op;
+        }
+
         public static void menuPrincipal(){
                 System.out.println("--------------------------------------");
                 System.out.println("Empresa de Importação de Produtos LTDA");
