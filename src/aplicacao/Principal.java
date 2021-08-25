@@ -3,6 +3,7 @@ package aplicacao;
 import entidades.Produto;
 import menus.Menus;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -23,7 +24,30 @@ public class Principal {
 
         Menus opcao = new Menus(op);
 
-        switch (opcao.getOp()){
+        do {
+            Menus.menuPrincipal();
+            if(opcao.getOp() == 1){
+                Menus.menuCadastro();
+                opcao.setOp(sc.nextInt());
+                switch(opcao.getOp()){
+                    case 0:
+                        System.out.println("Ok");
+                        continue;
+                }
+            }else if(opcao.getOp() == 2){
+                Menus.menuMovimentacao();
+                opcao.setOp(sc.nextInt());
+            }else if(opcao.getOp() == 3){
+
+            }else if(opcao.getOp() == 4){
+
+            }else{
+                System.out.println("Opção inválida!");
+                break;
+            }
+        }while(opcao.getOp() != 0);
+
+        /*switch (opcao.getOp()){
             case 1:
                 Menus.menuCadastro();
                 opcao.setOp(sc.nextInt());
@@ -44,7 +68,7 @@ public class Principal {
                 break;
             case 3:
             case 4:
-        }
+        }*/
 
     }
 
