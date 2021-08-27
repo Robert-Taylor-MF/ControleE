@@ -7,13 +7,7 @@ public class Menus {
 
         public Menus(){}
 
-        public Menus(int op) {
-                this.op = op;
-        }
-
-        public int getOp() {
-                return op;
-        }
+        public int getOp() {return op;}
 
         public void setOp(int op) {
                 this.op = op;
@@ -45,6 +39,33 @@ public class Menus {
                 System.out.println("4 - Exclusão");
                 System.out.println("0 - Retornar");
                 System.out.print("Opção: ");
+        }
+
+        public static void menuCadastroInclusao(){
+                System.out.println("--------------------------------------");
+                System.out.println("Empresa de Importação de Produtos LTDA");
+                System.out.println("   Sistema de controle de estoque ");
+                System.out.println("--------------------------------------");
+                System.out.println("Inclusão de Produtos");
+                System.out.println();
+        }
+
+        public static void menuCadastroAlteracao(){
+                System.out.println("--------------------------------------");
+                System.out.println("Empresa de Importação de Produtos LTDA");
+                System.out.println("   Sistema de controle de estoque ");
+                System.out.println("--------------------------------------");
+                System.out.println("Alteração de Produto");
+                System.out.println();
+        }
+
+        public static void relatorio(){
+                System.out.println("--------------------------------------");
+                System.out.println("Empresa de Importação de Produtos LTDA");
+                System.out.println("   Sistema de controle de estoque ");
+                System.out.println("--------------------------------------");
+                System.out.println("Lista de Preços:");
+                System.out.println();
         }
 
         public static void menuMovimentacao(){
